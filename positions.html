@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning examples</title>
+    <style>
+        /*static position*/
+        .static-box{
+            position: static;
+            border: 2px solid red;
+            padding: 10px;
+
+        }
+
+        /*relative positioning*/
+        .relative-box{
+            position: relative;
+            top: 20px;
+            left:  20px;
+            border: 2px solid blue;
+            padding: 10px;
+        }
+
+        
+
+        /*absolute positioning*/
+        .absolute-container{
+            position: relative;
+            height: 200px;
+            border: 2px solid green;
+        
+        
+        }
+
+        .absolute-box{
+            position: absolute;
+            top:50px;
+            left: 50px;
+            border: 2px solid yellow;
+            padding: 10px;
+            
+        }
+
+        /*fixed positioning*/
+        .fixed-box{
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            border: 2px solid purple;
+            padding: 10px;
+            background-color: yellow;
+            z-index: 2;
+        }
+
+       
+
+
+
+
+        /*fixed positioning*/
+        .fixed-circle{
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            border: 2px solid purple;
+            padding: 10px;
+            border-radius: 50%;
+            background-color: yellowgreen;
+        }
+
+
+
+
+
+
+
+        /*sticky positioning*/
+         .sticky-box{
+            position: sticky;
+            top: 0;
+            background-color: lightgray;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body style="height: 300vh;">
+
+    <!-- static positioning -->
+     <div class="static-box">static positioning</div>
+
+    <!-- relative positioning -->
+      <div class="relative-box">relative positioning</div>
+    
+    <!-- absolute positioning -->
+      <div class="absolute-container">
+          <div class="absolute-box">absolute positioning</div>
+      </div>
+      
+    <!-- fixed positioning -->
+      <div class="fixed-box">fixed positioning</div>
+
+   
+
+
+
+   <!-- fixed positioning -->
+      <div class="fixed-circle">fix 2</div>
+
+
+
+      
+    <!-- sticky positioning -->
+        <div style="height: 1000px;padding-top: 200px;">scroll down</div>
+      <div class="sticky-box">sticky positioning</div>
+
+    
+
+    
+</body>
+</html>
+
+
+
+

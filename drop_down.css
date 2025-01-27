@@ -1,0 +1,52 @@
+ul#main{
+    float: right;
+}
+
+#main li{
+    display: inline-block;
+    padding-right: 20px;
+    position: relative;
+}
+
+#main li a{
+    text-decoration: none;
+
+}
+
+#main li a:hover{
+   color: red;
+
+}
+#main li a:active{
+   color: rgb(229, 226, 54);
+
+}
+
+ul#nested{
+    display: none;
+    position: absolute;
+    left: -20px;
+    
+    width: 150px;
+}
+
+
+#nested li{
+    display: block;
+    padding-right: 20px;
+    background-color: beige;
+    padding: 10px 5px;
+    
+}
+
+
+
+
+#nested li:hover{
+    background-color: rgb(178, 67, 233);
+    
+}
+
+#main li:hover ul#nested{
+    display: block;
+}

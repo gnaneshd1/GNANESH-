@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display property example</title>
+    <style>
+
+           /* block*/
+           .block{
+
+            display: block;
+            width: 200px;
+            height: 50px;
+            background-color: lightblue;
+            margin-bottom: 10px;
+
+
+           }
+
+           /* inline */
+           .inline {
+
+            display: inline;
+            background-color: lightgreen;
+            padding: 5px 10px;
+            margin: right 10px;
+            width: 100px;
+            height: 100px;
+            
+
+           }
+
+           /* inline-block */
+           .inline-block{
+
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            margin: right 10px;
+
+           }
+           /*none*/
+           .none{
+            display:none;
+
+           }
+           /*flex*/
+           .flex-item{
+            width: 50px;
+            height: 50px;
+            background-color: lightgoldenrodyellow;
+            margin-right: 5px;
+
+           }
+           /*grid*/
+           .grid-container {
+            display: grid;
+            grid-template-columns: 100px 100px 100px ;
+            grid-gap: 10px;  
+            
+           }
+            .grid-item{
+                width: 100px;
+                height: 50px;
+                background-color: lightpink;
+            }
+   
+    </style>
+
+  
+</head>
+<body>
+    <!--block-->
+    <div class="block">block</div>
+
+    <!--inline-->
+    <span class="inline">inline</span>
+    <span class="inline">inline</span>
+    <span class="inline">inline</span>
+
+     <!--inline-block-->
+     <div class="inline-block">inline-block </div>
+     <div class="inline-block">inline-block </div>
+     <div class="inline-block">inline-block </div>
+
+
+     <!--NONE-->
+     <DIV class="none">none</DIV><!--this won't be displayed-->
+
+
+     <!--flex-->
+     <div class="flex-container">
+        <div class="flex-item">flex</div>
+        <div class="flex-item">flex</div>
+        <div class="flex-item">flex</div>
+     </div>
+
+      <!--grid-->
+      <div class="grid-container">
+
+        <div class="grid-item">grid</div>
+      <div class="grid-item">grid</div>
+      <div class="grid-item">grid</div>
+
+      </div>
+      
+
+
+     
+    
+</body>
+</html>

@@ -1,0 +1,72 @@
+ul#mainn{
+    float: right;
+
+}
+
+#main li{
+    display: inline;
+    padding: 10px;
+    position: relative;
+   
+   
+}
+
+
+#main li a{
+    text-decoration: none;
+   
+}
+
+#main li a:hover{
+    color: red;
+}
+
+#mainn li a:active{
+    color: rgb(153, 180, 47);
+}
+
+
+ul#nested{
+    display: none;
+    position: absolute;
+    left: 20px;
+    width: 150px;
+
+}
+
+
+#nested li{
+    background-color: rgb(153, 180, 47);
+    display: block;
+    padding-right: 200px;
+    padding: 10px 5px;
+
+}
+
+#nested li:hover{
+    background-color: royalblue;
+}
+
+#main li:hover ul#nested{
+    display: block;
+}
+
+.first_div{
+    width: 100%;
+    height: 100px;
+    background-color: brown;
+}
+
+@media  screen and (max-width:900px){
+    .first_div{
+        
+        background-color: rgb(53, 107, 152);
+
+    }
+}
+    
+
+
+
+
+   
