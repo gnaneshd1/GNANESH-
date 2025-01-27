@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS transition timing functions</title>
+
+    <style>
+
+        /*define styles for the element*/
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin-bottom: 20px ;
+
+        }
+
+        /*apply transitions with different timing functions */
+        .ease{
+            transition: height 3s ease;
+        }
+
+        .linear{
+            transition: all 1s linear;
+        }
+        
+        .ease-in{
+            transition: all 1s ease-in;
+        }
+
+        .ease-out{
+            transition: all 1s ease-out;
+        }
+
+        .ease-in-out{
+            transition: all 1s ease-in-out;
+        }
+
+        .custom{
+            transition:all 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+
+        }
+
+        /* hover effect to trigger transitions*/
+        .box:hover{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <!--HTML content-->
+    <div class="box ease">Ease timing function</div>
+    
+</body>
+</html>
